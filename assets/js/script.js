@@ -1,4 +1,4 @@
-/ Set variables and select DOM elements
+ //Set variables and select DOM elements
 const searchHistory = [];
 const weatherApiRootUrl = 'https://api.openweathermap.org';
 const weatherApiKey = '167907938925c9f8d762b3a1bd11b6f2';
@@ -49,7 +49,7 @@ function renderCurrentWeather(city, weather) {
   const tempF = weather.main.temp;
   const windMph = weather.wind.speed;
   const humidity = weather.main.humidity;
-  const iconUrl = https://openweathermap.org/img/w/${weather.weather[0].icon}.png;
+  const iconUrl = "https://openweathermap.org/img/w/${weather.weather[0].icon}.png";
   const iconDescription = weather.weather[0].description || weather[0].main;
 
   const card = document.createElement('div');
@@ -69,14 +69,14 @@ function renderCurrentWeather(city, weather) {
   windEl.setAttribute('class', 'card-text');
   humidityEl.setAttribute('class', 'card-text');
 
-  heading.textContent = ${ city } (${ date });
+  heading.textContent = '${city} (${date})';
   weatherIcon.setAttribute('src', iconUrl);
   weatherIcon.setAttribute('alt', iconDescription);
   weatherIcon.setAttribute('class', 'weather-img');
   heading.append(weatherIcon);
-  tempEl.textContent = Temp: ${ tempF }°F;
-  windEl.textContent = Wind: ${ windMph } MPH;
-  humidityEl.textContent = Humidity: ${ humidity } %;
+  tempEl.textContent = 'Temp: ${ tempF } °F';
+  windEl.textContent = 'Wind: ${ windMph } MPH';
+  humidityEl.textContent = 'Humidity: ${ humidity }%';
   cardBody.append(heading, tempEl, windEl, humidityEl);
 
   todayContainer.innerHTML = '';
@@ -85,8 +85,7 @@ function renderCurrentWeather(city, weather) {
 
 // Render forecast card function
 function renderForecastCard(forecast) {
-  const iconUrl = https://openweathermap.org/img/w/${forecast.weather[0].icon}.png;
+  const iconUrl = 'https://openweathermap.org/img/w/${forecast.weather[0].icon}.png';
   const iconDescription = forecast.weather[0].description;
   const tempF = forecast.main.temp;
-
-  
+};

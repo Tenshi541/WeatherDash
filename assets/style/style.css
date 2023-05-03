@@ -1,0 +1,98 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+.heading {
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.col1,
+.col2 {
+  flex: 1;
+  padding: 0 10px;
+}
+
+/* Search area styles */
+#search-area {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.city-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.btn {
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Search history styles */
+#search-history {
+  margin-top: 20px;
+}
+
+#search-history ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#search-history ul li {
+  margin: 5px 0;
+}
+
+/* Five day forecast styles */
+#five-day {
+  margin-top: 20px;
+}
+
+.spacebetween {
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+  .col1,
+  .col2 {
+    flex: none;
+    width: 100%;
+  }
+}
